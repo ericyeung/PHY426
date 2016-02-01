@@ -42,7 +42,7 @@ if __name__ == "__main__":
 	print "Diameter of beam at 67cm: %s units" % diamater_finder(imgarray1[110,:])
 	print "Diameter of beam at 77cm: %s units" % diamater_finder(imgarray2[86,:])
 	print "Diameter of beam at 87cm: %s units" % diamater_finder(imgarray3[93,:])
-	print "Diameter of beam at 97cm: %s units" % diamater_finder(imgarray4[94,:])
+	print "Diameter of beam at 97cm: %s units" % diamater_finder(imgarray4[86,:])
 
 	# Plot
 	plt.figure(1)
@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
 	plt.figure(5)
 	plt.imshow(imgarray4, cmap = 'gray')
-	plt.plot(xplot4, imgarray4[94,:], color = 'r', label = 'Intensity')
+	plt.plot(xplot4, imgarray4[86,:], color = 'r', label = 'Intensity')
 	plt.title("Position: 97cm")
 
-	#plt.show()
+	plt.show()
