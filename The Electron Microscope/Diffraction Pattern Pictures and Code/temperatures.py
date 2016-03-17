@@ -10,7 +10,7 @@ Latest Revision: March 1 2016
 __author__ = "Eric Yeung"
 
 heating_voltages = [0.02, 0.12, 0.32, 0.62, 0.82,
-                   1.12, 1.32, 1.83, 2.00, 2.7,
+                   1.12, 1.32, 1.53, 1.83, 2.00, 2.7,
                    2.32, 2.43, 2.55, 2.77, 2.87,
                    2.96]
 
@@ -27,10 +27,12 @@ cooling_temps_celsius = thermocouple("R", cooling_voltages, "mV", "C")
 print "The Curie temperature Tc is %s celsius or %s kelvin" % (heating_temps_celsius[-1], 
 	heating_temps_kelvin[-1])
 
-"""
 print "---- TEMPERATURES WHEN HEATING (Kelvin) ----"
-print heating_temps_kelvin
 
+for i in range(len(heating_temps_kelvin)):
+    print heating_voltages[i], heating_temps_kelvin[i]
+
+"""
 print "---- TEMPERATURES WHEN HEATING (Celsius) ----"
 print heating_temps_celsius
 
