@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 
 """
 EXPERIMENT 3: Resistivity at low temperatures
-Plots resisitvity versus temperature for Cu, Pb, and Au
+Plots resisitvity versus temperature for Cu 
 
 Latest Revision: March 24 2016, 8:30 am
 """
 
 __author__ = "Eric Yeung"
 
-data = np.loadtxt('copper_helium_fixed_sens.txt', comments='#')
+data = np.loadtxt('copper_test_helium_increasing.txt', comments='#')
 times = data[:,0]
 
 peak = (np.argmax(data[:,2])) # Should be 2.43 V or 4.8 K
